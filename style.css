@@ -15,10 +15,11 @@ body {
 }
 
 .logo {
+   max-width: 180px; 
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 120px;
+    width: 100px;
 }
 
 .hero-content h1 {
