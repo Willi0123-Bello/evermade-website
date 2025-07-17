@@ -1,215 +1,31 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f9fc;
-  color: #222;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('hero_background.jpg') center/cover no-repeat;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.8em;
-  margin-bottom: 15px;
-  line-height: 1.2;
-}
-
-.hero p {
-  font-size: 1.3em;
-  margin-bottom: 30px;
-}
-
-.buttons .btn {
-  padding: 12px 24px;
-  margin: 5px;
+/* FLORELLE TEXT LOGO */
+.florelle-text-logo {
+  font-size: 2.5em;
   font-weight: bold;
-  background-color: #0074d9;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  transition: background 0.3s ease;
-}
-
-.buttons .btn:hover {
-  background-color: #005fa3;
-}
-
-/* ABOUT */
-.about, .values {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2.2em;
-  margin-bottom: 20px;
-}
-
-/* MISSION/VISION */
-.values {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  text-align: left;
-}
-
-.value-block h3 {
   color: #0074d9;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
-.value-block p {
-  line-height: 1.6;
-  font-size: 1.05em;
-}
+/* CONTACT FORM RESPONSIVE FIX */
+@media (min-width: 768px) {
+  .contact-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-/* FLORELLE SECTION */
-.florelle {
-  background-color: #eaf6ff;
-  padding: 60px 20px;
-  text-align: center;
-}
+  .contact-form input,
+  .contact-form textarea {
+    flex: 1 1 30%;
+    min-width: 250px;
+  }
 
-.florelle-content {
-  max-width: 900px;
-  margin: 0 auto;
-}
+  .contact-form textarea {
+    flex-basis: 100%;
+  }
 
-.florelle-logo {
-  width: 140px;
-  margin-bottom: 20px;
-}
-
-.florelle h2 {
-  color: #0074d9;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.florelle .tagline {
-  font-size: 1.2em;
-  color: #333;
-  margin-bottom: 20px;
-  font-style: italic;
-}
-
-.florelle .description {
-  font-size: 1.05em;
-  line-height: 1.6;
-  margin-bottom: 25px;
-  color: #444;
-}
-
-.florelle .highlights {
-  list-style: none;
-  padding: 0;
-  font-size: 1.05em;
-  color: #333;
-}
-
-.florelle .highlights li {
-  margin: 10px 0;
-}
-
-/* CONTACT SECTION */
-.contact {
-  background-color: #ffffff;
-  padding: 60px 20px;
-  text-align: center;
-  color: #222;
-}
-
-.contact-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.contact h2 {
-  font-size: 2em;
-  margin-bottom: 15px;
-  color: #0074d9;
-}
-
-.contact p {
-  font-size: 1.05em;
-  margin-bottom: 30px;
-  color: #444;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: inherit;
-  resize: vertical;
-}
-
-.contact-form button {
-  padding: 12px 24px;
-  background-color: #0074d9;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #005fa3;
-}
-
-/* FOOTER */
-.footer {
-  background-color: #0074d9;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.footer-content {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.footer-logo img {
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-.footer-links {
-  margin: 15px 0;
-}
-
-.footer-links a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.footer-info p {
-  margin: 8px 0;
-  font-size: 0.95em;
+  .contact-form button {
+    flex-basis: 100%;
+  }
 }
